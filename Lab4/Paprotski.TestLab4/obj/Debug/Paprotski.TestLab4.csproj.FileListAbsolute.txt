@@ -1,0 +1,7 @@
+D:\VS2013\Project\sem2\INISP\Lab4\Paprotski.TestLab4\bin\Debug\Paprotski.TestLab4.dll
+D:\VS2013\Project\sem2\INISP\Lab4\Paprotski.TestLab4\bin\Debug\Paprotski.TestLab4.pdb
+D:\VS2013\Project\sem2\INISP\Lab4\Paprotski.TestLab4\obj\Debug\Paprotski.TestLab4.csprojResolveAssemblyReference.cache
+D:\VS2013\Project\sem2\INISP\Lab4\Paprotski.TestLab4\obj\Debug\Paprotski.TestLab4.dll
+D:\VS2013\Project\sem2\INISP\Lab4\Paprotski.TestLab4\obj\Debug\Paprotski.TestLab4.pdb
+D:\VS2013\Project\sem2\INISP\Lab4\Paprotski.TestLab4\bin\Debug\Paprotski.Lab4.exe
+D:\VS2013\Project\sem2\INISP\Lab4\Paprotski.TestLab4\bin\Debug\Paprotski.Lab4.pdb

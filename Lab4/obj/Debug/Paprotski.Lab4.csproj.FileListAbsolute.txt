@@ -1,0 +1,6 @@
+D:\VS2013\Project\sem2\INISP\Lab4\bin\Debug\Paprotski.Lab4.exe.config
+D:\VS2013\Project\sem2\INISP\Lab4\bin\Debug\Paprotski.Lab4.exe
+D:\VS2013\Project\sem2\INISP\Lab4\bin\Debug\Paprotski.Lab4.pdb
+D:\VS2013\Project\sem2\INISP\Lab4\obj\Debug\Paprotski.Lab4.csprojResolveAssemblyReference.cache
+D:\VS2013\Project\sem2\INISP\Lab4\obj\Debug\Paprotski.Lab4.exe
+D:\VS2013\Project\sem2\INISP\Lab4\obj\Debug\Paprotski.Lab4.pdb

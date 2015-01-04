@@ -1,0 +1,7 @@
+D:\VS2012\Project\Sem2.Labs\Lab1\Lab1\bin\Debug\Lab1.exe.config
+D:\VS2012\Project\Sem2.Labs\Lab1\Lab1\bin\Debug\Lab1.exe
+D:\VS2012\Project\Sem2.Labs\Lab1\Lab1\bin\Debug\Lab1.pdb
+D:\VS2012\Project\Sem2.Labs\Lab1\Lab1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
+D:\VS2012\Project\Sem2.Labs\Lab1\Lab1\obj\Debug\Lab1.exe
+D:\VS2012\Project\Sem2.Labs\Lab1\Lab1\obj\Debug\Lab1.pdb
+D:\VS2012\Project\Sem2.Labs\Lab1\Lab1\bin\Debug\Paprotski.Lab1.exe.config

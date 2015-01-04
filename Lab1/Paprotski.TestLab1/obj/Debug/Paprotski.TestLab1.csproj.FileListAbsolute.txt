@@ -1,0 +1,14 @@
+d:\VS2012\Project\sem2\INISP\Lab1\Paprotski.TestLab1\bin\Debug\Paprotski.TestLab1.dll
+d:\VS2012\Project\sem2\INISP\Lab1\Paprotski.TestLab1\bin\Debug\Paprotski.TestLab1.pdb
+d:\VS2012\Project\sem2\INISP\Lab1\Paprotski.TestLab1\bin\Debug\Paprotski.Lab1.exe
+d:\VS2012\Project\sem2\INISP\Lab1\Paprotski.TestLab1\bin\Debug\Paprotski.Lab1.pdb
+d:\VS2012\Project\sem2\INISP\Lab1\Paprotski.TestLab1\obj\Debug\Paprotski.TestLab1.csprojResolveAssemblyReference.cache
+d:\VS2012\Project\sem2\INISP\Lab1\Paprotski.TestLab1\obj\Debug\Paprotski.TestLab1.dll
+d:\VS2012\Project\sem2\INISP\Lab1\Paprotski.TestLab1\obj\Debug\Paprotski.TestLab1.pdb
+D:\VS2013\Project\sem2\INISP\Lab1\Paprotski.TestLab1\bin\Debug\Paprotski.TestLab1.dll
+D:\VS2013\Project\sem2\INISP\Lab1\Paprotski.TestLab1\bin\Debug\Paprotski.TestLab1.pdb
+D:\VS2013\Project\sem2\INISP\Lab1\Paprotski.TestLab1\bin\Debug\Paprotski.Lab1.exe
+D:\VS2013\Project\sem2\INISP\Lab1\Paprotski.TestLab1\bin\Debug\Paprotski.Lab1.pdb
+D:\VS2013\Project\sem2\INISP\Lab1\Paprotski.TestLab1\obj\Debug\Paprotski.TestLab1.csprojResolveAssemblyReference.cache
+D:\VS2013\Project\sem2\INISP\Lab1\Paprotski.TestLab1\obj\Debug\Paprotski.TestLab1.dll
+D:\VS2013\Project\sem2\INISP\Lab1\Paprotski.TestLab1\obj\Debug\Paprotski.TestLab1.pdb

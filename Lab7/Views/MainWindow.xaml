@@ -1,0 +1,85 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:viewsModel="clr-namespace:Paprotski.Lab7.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Paprotski.Lab7.Views.MainWindow"
+        Title="MainWindow" Height="421" Width="759">
+    <Window.DataContext>
+        <viewsModel:GroupViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="1" Margin="10,10,0,96" HorizontalAlignment="Left" Width="310">
+            <TextBlock TextWrapping="Wrap" Text="Name" Margin="10,10,268,247"/>
+            <TextBox Text="{Binding Student.Student.Name}" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="90,10,100,0"/>
+
+            <TextBlock TextWrapping="Wrap" Text="Surname" Margin="10,50,253,207"/>
+            <TextBox Text="{Binding Student.Student.Surname}" Margin="90,50,100,200" TextWrapping="Wrap"/>
+
+            <TextBlock TextWrapping="Wrap" Text="Gender" Margin="10,90,261,167"/>
+            <ComboBox Text="{Binding Student.Student.Gender}" Margin="90,90,100,161">
+                <ComboBoxItem Content="Male" HorizontalAlignment="Left" Width="118"/>
+                <ComboBoxItem Content="Female" HorizontalAlignment="Left" Width="118"/>
+            </ComboBox>
+
+            <TextBlock TextWrapping="Wrap" Text="GPA" Margin="10,130,277,127"/>
+            <TextBox Text="{Binding Student.Student.GPA}" Margin="90,130,100,120" TextWrapping="Wrap"/>
+
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Group" VerticalAlignment="Top" Margin="10,170,0,0"/>
+            <TextBox Text="{Binding Student.Student.GroupNumber}" Height="23" Margin="90,170,100,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+            <TextBlock TextWrapping="Wrap" Text="Faculty" VerticalAlignment="Top" Margin="10,210,253,0"/>
+            <TextBox Text="{Binding Student.Student.Faculty}" Margin="90,210,100,40" TextWrapping="Wrap"/>
+
+            <TextBlock TextWrapping="Wrap" Text="Specialty" Margin="10,250,245,7"/>
+            <TextBox Text="{Binding Student.Student.Speciality}" Margin="90,250,100,0" TextWrapping="Wrap"/>
+        </Grid>
+
+        <TabControl Grid.Row="0" Grid.Column="1" Margin="325,10,10,6">
+            <TabItem Header="ListView">
+                <Grid Background="Azure">
+                    <ListView ItemsSource="{Binding Group, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedStudent}" Height="326" VerticalAlignment="Top" Background="#FFFFFCFC">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding Student.Name}"/>
+                                <GridViewColumn Header="Surname" Width="100" DisplayMemberBinding="{Binding Student.Surname}"/>
+                                <GridViewColumn Header="Gender" Width="60" DisplayMemberBinding="{Binding Student.Gender}"/>
+                                <GridViewColumn Header="GPA" Width="70" DisplayMemberBinding="{Binding Student.GPA}"/>
+                                <GridViewColumn Header="Group" Width="70" DisplayMemberBinding="{Binding Student.GroupNumber}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TreeView">
+                <Grid Background="Azure">
+                    <TreeView ItemsSource="{Binding Group}">
+                        <TreeView.ItemTemplate>
+                            <HierarchicalDataTemplate ItemsSource="{Binding Student}">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Student.Name}"/>
+                                    <TextBlock Text=" "/>
+                                    <TextBlock Text="{Binding Student.Surname}"/>
+                                </StackPanel>
+                            </HierarchicalDataTemplate>
+                        </TreeView.ItemTemplate>
+                    </TreeView>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="0" Margin="10,288,0,6" HorizontalAlignment="Left" Width="310">
+            <Button Command="{Binding InsertCommand}" Content="Insert" Margin="10,10,225,53"/>
+            <Button Command="{Binding RemoveCommand}" Content="Remove" Margin="225,10,10,53"/>
+            <Button Command="{Binding LoadCommand}" Content="Load" Margin="10,54,225,9"/>
+            <Button Command="{Binding SaveCommand}" Content="Save" Margin="225,54,10,9"/>
+        </Grid>
+    </Grid>
+</Window>

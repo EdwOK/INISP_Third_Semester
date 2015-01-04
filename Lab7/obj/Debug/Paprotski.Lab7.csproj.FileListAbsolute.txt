@@ -1,0 +1,15 @@
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\bin\Debug\Paprotski.Lab7.exe.config
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\bin\Debug\Paprotski.Lab7.exe
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\bin\Debug\Paprotski.Lab7.pdb
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\obj\Debug\Paprotski.Lab7.csprojResolveAssemblyReference.cache
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\obj\Debug\App.g.cs
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\obj\Debug\Paprotski.Lab7_MarkupCompile.cache
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\obj\Debug\Paprotski.Lab7.g.resources
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\obj\Debug\Paprotski.Lab7.Properties.Resources.resources
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\obj\Debug\Paprotski.Lab7.csproj.GenerateResource.Cache
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\obj\Debug\Paprotski.Lab7.exe
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\obj\Debug\Paprotski.Lab7.pdb
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\obj\Debug\Views\MainWindow.baml
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\obj\Debug\Views\MainWindow.g.cs
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\VS2013\Project\sem2\INISP\Lab7\Paprotski.Lab7\obj\Debug\Paprotski.Lab7_MarkupCompile.lref

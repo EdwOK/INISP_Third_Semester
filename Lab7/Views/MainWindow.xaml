@@ -46,14 +46,14 @@
         <TabControl Grid.Row="0" Grid.Column="1" Margin="325,10,10,6">
             <TabItem Header="ListView">
                 <Grid Background="Azure">
-                    <ListView ItemsSource="{Binding Group, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedStudent}" Height="326" VerticalAlignment="Top" Background="#FFFFFCFC">
+                    <ListView ItemsSource="{Binding Path=Group}" SelectedItem="{Binding Student}" Height="326" VerticalAlignment="Top" Background="#FFFFFCFC">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding Student.Name}"/>
-                                <GridViewColumn Header="Surname" Width="100" DisplayMemberBinding="{Binding Student.Surname}"/>
-                                <GridViewColumn Header="Gender" Width="60" DisplayMemberBinding="{Binding Student.Gender}"/>
-                                <GridViewColumn Header="GPA" Width="70" DisplayMemberBinding="{Binding Student.GPA}"/>
-                                <GridViewColumn Header="Group" Width="70" DisplayMemberBinding="{Binding Student.GroupNumber}"/>
+                                <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding Path=Student.Name}"/>
+                                <GridViewColumn Header="Surname" Width="100" DisplayMemberBinding="{Binding Path=Student.Surname}"/>
+                                <GridViewColumn Header="Gender" Width="60" DisplayMemberBinding="{Binding Path=Student.Gender}"/>
+                                <GridViewColumn Header="GPA" Width="70" DisplayMemberBinding="{Binding Path=Student.GPA}"/>
+                                <GridViewColumn Header="Group" Width="70" DisplayMemberBinding="{Binding Path=Student.GroupNumber}"/>
                             </GridView>
                         </ListView.View>
                     </ListView>
@@ -63,9 +63,9 @@
                 <Grid Background="Azure">
                     <TreeView ItemsSource="{Binding Group}">
                         <TreeView.ItemTemplate>
-                            <HierarchicalDataTemplate ItemsSource="{Binding Student}">
+                            <HierarchicalDataTemplate ItemsSource="{Binding Path=Student}">
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="{Binding Student.Name}"/>
+                                    <TextBlock Text="{Binding Path=Student.Name}"/>
                                     <TextBlock Text=" "/>
                                     <TextBlock Text="{Binding Student.Surname}"/>
                                 </StackPanel>

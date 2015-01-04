@@ -1,63 +1,91 @@
-﻿using System.Windows.Input;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
+using System.Windows.Input;
 
 namespace Paprotski.Lab7.ViewModels
 {
+    using System.Linq;
+
     public class GroupViewModel
     {
+        #region Ctors
+
         public GroupViewModel()
         {
             this.Student = new StudentViewModel();
-            this.SelectedStudent = new StudentViewModel();
             this.Group = new ObservableCollection<StudentViewModel>();
-            this.RemoveCommand = new DelegateCommand(RemoveExecuteMethod, CanRemoveExecuteMethod, true);
-            this.InsertCommand = new DelegateCommand(InsertExecuteMethod, CanInsertExecuteMethod, true);
+            this.RemoveCommand = new DelegateCommand(this.RemoveExecuteMethod, this.CanRemoveExecuteMethod, false);
+            this.InsertCommand = new DelegateCommand(this.InsertExecuteMethod, this.CanInsertExecuteMethod, true);
         }
 
-        private bool CanRemoveExecuteMethod()
-        {
-            return this.SelectedStudent != null;
-        }
+        #endregion
 
-        private void RemoveExecuteMethod()
-        {
-            this.Group.Remove(this.SelectedStudent);
-        }
+        #region Public Properties
+
+        public ObservableCollection<StudentViewModel> Group { get; set; }
+
+        public StudentViewModel Student { get; set; }
+
+        public ICommand InsertCommand { get; private set; }
+
+        public ICommand RemoveCommand { get; private set; }
+
+        #endregion
+
+        #region Methods
 
         private bool CanInsertExecuteMethod()
         {
             return this.Group.Count < 20;
         }
 
-        private void InsertExecuteMethod()
+        private bool CanRemoveExecuteMethod()
         {
-            this.CurrentStudent = new StudentViewModel
-                                      {
-                                          Student =
-                                              {
-                                                  Name = this.Student.Student.Name,
-                                                  Faculty = this.Student.Student.Faculty,
-                                                  Gender = this.Student.Student.Gender,
-                                                  GPA = this.Student.Student.GPA,
-                                                  GroupNumber = this.Student.Student.GroupNumber,
-                                                  Speciality = this.Student.Student.Speciality,
-                                                  Surname = this.Student.Student.Surname
-                                              }
-                                      };
-
-            this.Group.Add(this.CurrentStudent); 
+            return this.Group.Count > 0;
         }
 
-        public ICommand RemoveCommand { get; private set; }
+        private void InsertExecuteMethod()
+        {
+            var currentStudent = new StudentViewModel
+                                     {
+                                         Student =
+                                             {
+                                                 Name = this.Student.Student.Name,
+                                                 Faculty = this.Student.Student.Faculty,
+                                                 Gender = this.Student.Student.Gender,
+                                                 GPA = this.Student.Student.GPA,
+                                                 GroupNumber = this.Student.Student.GroupNumber,
+                                                 Speciality = this.Student.Student.Speciality,
+                                                 Surname = this.Student.Student.Surname
+                                             }
+                                     };
 
-        public ICommand InsertCommand { get; private set; }
+            this.Group.Add(currentStudent);
+        }
 
-        public StudentViewModel Student { get; set; }
+        private void RemoveExecuteMethod()
+        {
+            var currentStudent = new StudentViewModel
+                                     {
+                                         Student =
+                                             {
+                                                 Name = this.Student.Student.Name,
+                                                 Faculty = this.Student.Student.Faculty,
+                                                 Gender = this.Student.Student.Gender,
+                                                 GPA = this.Student.Student.GPA,
+                                                 GroupNumber = this.Student.Student.GroupNumber,
+                                                 Speciality = this.Student.Student.Speciality,
+                                                 Surname = this.Student.Student.Surname
+                                             }
+                                     };
 
-        public StudentViewModel CurrentStudent { get; set; }
+            var thisRemoveStudent = this.Group.FirstOrDefault(studentViewModel => studentViewModel.Student.Equals(currentStudent.Student));
 
-        public StudentViewModel SelectedStudent { get; set; }
+            if (thisRemoveStudent != null)
+            {
+                this.Group.Remove(thisRemoveStudent);
+            }
+        }
 
-        public ObservableCollection<StudentViewModel> Group { get; set; }
+        #endregion
     }
 }

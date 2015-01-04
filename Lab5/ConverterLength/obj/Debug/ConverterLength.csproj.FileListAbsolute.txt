@@ -1,0 +1,7 @@
+D:\VS2013\Project\sem2\INISP\Lab5\ConverterLength\obj\Debug\ConverterLength.csprojResolveAssemblyReference.cache
+D:\VS2013\Project\sem2\INISP\Lab5\ConverterLength\bin\Debug\ConverterLength.dll
+D:\VS2013\Project\sem2\INISP\Lab5\ConverterLength\bin\Debug\ConverterLength.pdb
+D:\VS2013\Project\sem2\INISP\Lab5\ConverterLength\bin\Debug\Paprotski.Quantity.dll
+D:\VS2013\Project\sem2\INISP\Lab5\ConverterLength\bin\Debug\Paprotski.Quantity.pdb
+D:\VS2013\Project\sem2\INISP\Lab5\ConverterLength\obj\Debug\ConverterLength.dll
+D:\VS2013\Project\sem2\INISP\Lab5\ConverterLength\obj\Debug\ConverterLength.pdb

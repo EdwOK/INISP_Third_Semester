@@ -1,0 +1,8 @@
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotski.Lab5\bin\Debug\Paprotski.Lab5.exe.config
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotski.Lab5\bin\Debug\Paprotski.Lab5.exe
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotski.Lab5\bin\Debug\Paprotski.Lab5.pdb
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotski.Lab5\obj\Debug\Paprotski.Lab5.csprojResolveAssemblyReference.cache
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotski.Lab5\obj\Debug\Paprotski.Lab5.exe
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotski.Lab5\obj\Debug\Paprotski.Lab5.pdb
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotski.Lab5\bin\Debug\Paprotski.Quantity.dll
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotski.Lab5\bin\Debug\Paprotski.Quantity.pdb

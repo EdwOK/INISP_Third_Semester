@@ -1,0 +1,4 @@
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotski.IQuantity\bin\Debug\Paprotski.Quantity.dll
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotski.IQuantity\bin\Debug\Paprotski.Quantity.pdb
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotski.IQuantity\obj\Debug\Paprotski.Quantity.dll
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotski.IQuantity\obj\Debug\Paprotski.Quantity.pdb

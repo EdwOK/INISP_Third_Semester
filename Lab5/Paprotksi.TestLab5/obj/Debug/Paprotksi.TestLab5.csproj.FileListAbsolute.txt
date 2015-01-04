@@ -1,0 +1,4 @@
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotksi.TestLab5\bin\Debug\Paprotksi.TestLab5.dll
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotksi.TestLab5\bin\Debug\Paprotksi.TestLab5.pdb
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotksi.TestLab5\obj\Debug\Paprotksi.TestLab5.dll
+D:\VS2013\Project\sem2\INISP\Lab5\Paprotksi.TestLab5\obj\Debug\Paprotksi.TestLab5.pdb
